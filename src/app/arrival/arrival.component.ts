@@ -27,9 +27,10 @@ public colonist: Colonist;
     occupationService.getOccupations().then(jobs => this.occupation = jobs);
    }
 
-  OnSubmit() {
+ onSubmit() {
+  //  console.log('sub');
     this.colonistService.newColonist(this.colonist).then(colonist => {
-      this.router.navigate(['/encouters']);
+      this.router.navigate(['/encounters']);
     }).catch(error => {
       //TODO: handle error
       // this.SERVER_ERROR = 'There was an error processing the colonist.';

@@ -17,19 +17,21 @@ getColonists(): Promise<Colonist[]> {
 
 }
 
+newColonist(colonist: Colonist): Promise<Colonist> {
+  let headers = new Headers({'Content-Type': 'application/json'});
+  let body = JSON.stringify({ colonist });
+  return this.http
+             .post(this.colonistUrl, body, { headers: headers })
+             .toPromise()
+             .then(response => response.json().colonist)
+             .catch(this.handleError);
+}
+
+
 private handleError(error: any): Promise<void> {
      console.error('An error occurred', error);
      return Promise.reject(error.message || error);
   }
 
-  newColonist(colonist: Colonist): Promise<Colonist> {
-    let headers = new Headers({'Content-Type': 'application/json'});
-    let body = JSON.stringify({ colonist });
-    return this.http
-               .post(this.colonistUrl, body, { headers: headers })
-               .toPromise()
-               .then(response => response.json().colonist)
-               .catch(this.handleError);
-}
 
 }

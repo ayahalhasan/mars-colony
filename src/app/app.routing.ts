@@ -23,7 +23,7 @@ const appRoutes: Routes =[
 
   {
     path: 'report',
-    component: 'ReportComponent'
+    component: ReportComponent
   }
 ];
 

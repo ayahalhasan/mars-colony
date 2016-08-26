@@ -5,7 +5,7 @@
   background-color: #000;
   flex-direction: column;
   min-height: 100vh;
-  width: 100%;
+  padding: 0 2rem;
 }
 
 .header {
@@ -36,7 +36,7 @@ select, option {
   background: 0 0;
   border: 1px solid transparent;
   outline: none;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   border-bottom: 1px solid #fff;
   -webkit-appearance: none;
 }
@@ -49,7 +49,6 @@ button {
   text-align: center;
   width: 100%;
   color: #fff;
-  background-color: #fff;
   background: #000;
   font-family: 'Roboto', sans-serif;
   padding: 1rem 2rem;
@@ -61,8 +60,6 @@ button:hover{
 }
 
 /* Page editing  */
-
-
 body {
   display: block;
   margin: 8px;

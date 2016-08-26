@@ -11,12 +11,13 @@
     <input type="number"[(ngModel)]="colonist.age" name="age" palceholder="Age" required />
 
 
-    <select name="user_job" [(ngModel)]="colonist.job" name="job_id" required>
+    <select [(ngModel)]="colonist.job" name="job" required>
       <option value="(none)" selected>Select Occupation </option>
       <option *ngFor="let o of occupation" [value]="o.id">{{o.name}} </option>
     </select>
 
+    <!-- <fieldset> -->
       <button [disabled]="noOccupation || !arrivalForm.valid" type="submit"> Check in </button>
-
+    <!-- </fieldset> -->
   </form>
 </div>

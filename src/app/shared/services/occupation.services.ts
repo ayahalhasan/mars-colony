@@ -12,7 +12,7 @@ export class OccupationService {
 getOccupations(): Promise<IOccupation[]> {
  return this.http.get(this.OccupationsUrl)
                  .toPromise()
-                 .then(response => response.json().Occupations)
+                 .then(response => response.json().jobs)
                  .catch(this.handleError);
 
 }
