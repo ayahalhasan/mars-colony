@@ -1,0 +1,22 @@
+
+<div class="register-page">
+  <h1 class='header'>Register</h1>
+
+  <!-- {{ NO_OCCUPATION_SELECTED = 'Great!'}} -->
+
+  <form (ngSumbit)="onSubmit()" name="arrivalForm" #arrivalForm="ngForm">
+
+    <input type="text"[(ngModel)]="colonist.name" name="name" palceholder="Name" required />
+
+    <input type="number"[(ngModel)]="colonist.age" name="age" palceholder="Age" required />
+
+
+    <select name="user_job" [(ngModel)]="colonist.job" name="job_id" required>
+      <option value="(none)" selected>Select Occupation </option>
+      <option *ngFor="let o of occupation" [value]="o.id">{{o.name}} </option>
+    </select>
+
+      <button [disabled]="noOccupation || !arrivalForm.valid" type="submit"> Check in </button>
+
+  </form>
+</div>

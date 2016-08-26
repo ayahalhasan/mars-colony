@@ -1,0 +1,55 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+
+@keyframes animation{
+    0% {transform: scale(0.1, 0.1); opacity: 0.0;
+    		box-shadow: 0 0 0 1rem rgba(255,100,100,.1),0 0 0 2rem rgba(255,100,100,.15),0 0 0 3rem rgba(255,100,100,.2);
+    }
+    50% {opacity: 1.0;
+    		box-shadow: 0 0 0 1.25rem rgba(255,100,.1),0 0 0 2.75rem rgba(255,100,100,.1),0 0 0 4rem rgba(255,100,100,0);
+    }
+    75% {
+    box-shadow: 0 0 0 1.5rem rgba(255,100,100,.1),0 0 0 3rem rgba(255,100,100,0),0 0 0 5rem rgba(255,100,100,0);}
+
+    100% {transform: scale(1.2, 1.2); opacity: 0.0;
+    			box-shadow: 0 0 0 1.75rem rgba(255,100,100,0),0 0 0 3.75rem rgba(255,100,100,0),0 0 0 6rem rgba(255,100,100,0);
+    }
+}
+
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(100,0,0,.7)),url(http://www.space.com/images/i/000/054/822/original/Mars_Hemisphere_NASA_image.jpg?interpolation=lanczos-none&downsize=*:1000);
+  background-size: cover;
+}
+
+.enter-button a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    flex-basis: 50%;
+    cursor: auto;
+    background: rgba(250, 200, 200, .2);
+    animation: animation 2.5s ease-out;
+    animation-iteration-count: infinite;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  flex-basis: 20%;
+}
+
+.enter {
+  color: #fff;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+
+}

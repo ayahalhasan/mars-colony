@@ -1,0 +1,99 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+
+
+.register-page {
+  background-color: #000;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.form {
+  color: #ed4343;
+  flex-direction: column;
+  flex: 4;
+  padding: 0 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* This is for occupation selecter */
+
+select, option {
+  width: 100%;
+  font-size: 1rem;
+  color: #ed4343;
+  /*width: 100%;*/
+  margin: 0;
+  background: 0 0;
+  border: 1px solid transparent;
+  outline: none;
+  /*box-sizing: border-box;*/
+  border-bottom: 1px solid #fff;
+  -webkit-appearance: none;
+}
+
+/* This is for the button */
+button {
+  flex: 1;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: #fff;
+  background: #000;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+/* Page editing  */
+
+
+body {
+  display: block;
+  margin: 8px;
+  color: #fff;
+  flex: 1rem;
+  border: 0;
+  padding: 0;
+}
+
+
+input {
+  color: #fff;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border: none;
+  /*border-bottom: 1px solid #fff;*/
+  box-shadow: none;
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  background: 0 0;
+}
+
+
+input, select{
+	width: 100%;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	border-bottom: 1px solid #fff;
+	color: #ed4343;
+	/*letter-spacing: 2px;
+	margin-top: 15px;*/
+}
