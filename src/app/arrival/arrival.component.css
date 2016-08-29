@@ -32,12 +32,15 @@ select, option {
   color: #ed4343;
   /*width: 100%;*/
   margin: 0;
-  background: 0 0;
+  background: #000;
   border: 1px solid transparent;
   outline: none;
   box-sizing: border-box;
   border-bottom: 1px solid #fff;
-  -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #ed4343;
 }
 
 /* This is for the button */

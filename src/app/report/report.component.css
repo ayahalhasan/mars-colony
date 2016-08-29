@@ -42,7 +42,6 @@ span {
 h1 {
 	font-weight: 100;
 	font-size: 2rem;
-	text-transform: uppercase;
 	color: #fff;
 }
 
@@ -52,22 +51,34 @@ form {
 	position: relative;
 }
 
-input, select{
+select{
 	width: 100%;
 	border: none;
   font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 1rem;
 	padding: 10px;
-	background-color: transparent;
 	border-bottom: 1px solid #fff;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	box-sizing: content-box;
+	color: #ed4343;
+	background: 0 0;
 	margin-top: 15px;
 	outline: none;
-  border:1px solid #fff;
-  box-shadow: 0 0 10px #719ECE;
+  /*border:1px solid #fff;*/
+  /*box-shadow: 0 0 10px #719ECE;*/
+}
+
+input {
+	width: 100%;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	padding: 10px;
+	color: #ed4343;
+	margin-top: 15px;
+	outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #ed4343;
 }
 
 

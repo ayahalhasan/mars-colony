@@ -13,11 +13,11 @@
 
       <select [(ngModel)]="colonist.job_id" name="job_id" required><br>
         <option value="(none)" selected>Select Occupation</option>
-        <option *ngFor="let o of occupations"  [value]="o.id">{{o.name}} </option>
+        <option *ngFor="let job of occupations"  [value]="job.id">{{job.name}} </option>
       </select>
 
     <button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit">Check in </button>
 
   </form>
-  
+
 </section>

@@ -17,7 +17,7 @@ export class ArrivalComponent {
 NO_OCCUPATION_SELECTED = '(none)';
 
 // public SERVER_ERROR: string;
-public occupation: IOccupation[];
+public occupations: IOccupation[];
 public colonist: Colonist;
 
   constructor(
@@ -26,7 +26,7 @@ public colonist: Colonist;
     private occupationService: OccupationService
   ) {
     this.colonist = new Colonist('', '', this.NO_OCCUPATION_SELECTED);
-    occupationService.getOccupations().then(jobs => this.occupation = jobs);
+    occupationService.getOccupations().then(jobs => this.occupations = jobs);
    }
 
  onSubmit() {
