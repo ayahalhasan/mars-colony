@@ -1,98 +1,93 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,700";
 
-
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .container {
-	position: relative;
-	min-height: 100vh;
-	background-color: #000;
-	background-position: bottom;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 article {
-	width: 80%;
-	position: relative;
+  width: 80%;
+  position: relative;
 }
 
 span {
-	color: #fff;
-	position: absolute;
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	font-size: 1rem;
-
+  color: #fff;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1rem;
 }
 
-
-.title{
-	width: 100%;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	color: #fff;
+.title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
-
 
 h1 {
-	font-weight: 100;
-	font-size: 2rem;
-	color: #fff;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #fff;
 }
 
 form {
-	width: 100%;
-	height: auto;
-	position: relative;
-}
-
-select{
-	width: 100%;
-	border: none;
-  font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
-	padding: 10px;
-	border-bottom: 1px solid #fff;
-	color: #ed4343;
-	background: 0 0;
-	margin-top: 15px;
-	outline: none;
-  /*border:1px solid #fff;*/
-  /*box-shadow: 0 0 10px #719ECE;*/
-}
-
-input {
-	width: 100%;
-	border: none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
-	padding: 10px;
-	color: #ed4343;
-	margin-top: 15px;
-	outline: none;
-}
-
-input::-webkit-input-placeholder {
+  width: 100%;
+  height: auto;
+  position: relative;
   color: #ed4343;
 }
 
+select {
+  width: 100%;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  color: #ed4343;
+  background: 0 0;
+  margin-top: 15px;
+  outline: none;
+}
 
-button{
-	position: absolute;
-	color: #fff;
-	background-color: #000;
-	font-family: 'Roboto', sans-serif;
-	padding: 10px ;
-	width: 50%;
-	margin-top: 20px;
-	left:25%;
-	border: none;
-	font-size: 2rem;
-	font-weight: 100;
-	cursor: pointer;
+textarea {
+  width: 100%;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  color: #ed4343;
+  margin-top: 15px;
+  outline: none;
+  line-height: 1rem;
+  height: 200px;
+  &::-webkit-input-placeholder {
+    color: #ed4343;
+  }
+}
+
+button {
+  position: absolute;
+  color: #fff;
+  background-color: #000;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  width: 50%;
+  margin-top: 20px;
+  left: 25%;
+  border: none;
+  font-size: 2rem;
+  font-weight: 100;
+  cursor: pointer;
 }

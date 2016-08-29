@@ -11,11 +11,12 @@
 
     <form (ngSubmit)="onSubmit()" name="reportForm" #reportForm="ngForm">
 
-      <select  [(ngModel)]="encounter.atype" name="atype" placeholder="Select Alien Type" required><br>
+      <select [(ngModel)]="encounter.atype" name="atype"><br>
+        <option value='(none)' selected>Select Alien Type</option>
         <option *ngFor="let o of aliens"  [value]="o.type">{{o.type}}</option>
       </select>
 
-      <input type="text" name="report" placeholder="Take Action" [(ngModel)]="encounter.action" required>
+      <textarea type="text" name="report" placeholder="Take Action" [(ngModel)]="encounter.action" required></textarea>
 
         <button [disabled]="noEncounters || !reportForm.form.valid" type="submit">Submit Report </button>
   	</form>
