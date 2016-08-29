@@ -27,7 +27,7 @@ export class ReportComponent {
 
   	) {
 
-  	this.encounter = new Encounter('','','','100');
+  	this.encounter = new Encounter(this.NO_ALIEN_SELECTED,'','','100');
   	alienService.getAliens().then(alien => this.aliens = alien);
   	}
 
