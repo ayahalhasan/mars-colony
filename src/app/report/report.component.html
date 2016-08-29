@@ -1,24 +1,24 @@
-<div class="report">
+<section class="container">
 
-  <h1 class="header">
+
+  <h1 class="titler">
     Report Encounter
     <span>Safety on Mars is your responsibility</span>
   </h1>
-  <form action class="form" name="report-form">
+  <article>
 
-    <!-- This is for the text area  -->
-    <fieldset>
-      <div class="select">
-        <select required name="alineType" class="aline"></select>
-      </div>
-      <textarea name="Action-taken" rows="10" class="text"></textarea>
-    </fieldset>
+    <p><i class="fa fa-reddit-alien" aria-hidden="true"></i> Select Your Alien</p>
 
-    <!-- This is for the button -->
-    <fieldset>
-      <button class="button"> Submit Report </button>
-    </fieldset>
+    <form (ngSubmit)="onSubmit()" name="reportForm" #reportForm="ngForm">
 
-  </form>
+      <select  [(ngModel)]="encounter.atype" name="atype" placeholder="Select Alien Type" required><br>
+        <option *ngFor="let o of aliens"  [value]="o.type">{{o.type}}</option>
+      </select>
 
-</div>
+      <input type="text" name="report" placeholder="Take Action" [(ngModel)]="encounter.action" required>
+
+        <button [disabled]="noEncounters || !reportForm.form.valid" type="submit">Submit Report </button>
+  	</form>
+
+  </article>
+</section>

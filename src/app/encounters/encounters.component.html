@@ -1,15 +1,20 @@
-<div class="main">
-  <div class="encounters">
-    <h1 class="header-page">Recent Encounters
-      <span> See an Alien? Report it! </span>
+<section class="encounters">
+
+  <header class="title">
+    <h1>Recent Encounters
+    <span>See an Alien? Report it!</span>
     </h1>
+  </header>
 
-    <ul class="encounter-list"> testing </ul>
+  <section class="encounter-reports">
+    <div class="list-reports" *ngFor="let encounter of encounters">
+      <p class="date-alien">{{encounter.date}} - {{encounter.atype}}</p>
+      <p class="action">{{encounter.action}}</p>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="button">Report Encounter</div>
-    </footer>
+  <footer>
+    <button [routerLink]="['/report']">Report Encounter!</button>
+  </footer>
 
-  </div>
-
-</div>
+</section>

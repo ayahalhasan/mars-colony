@@ -11,6 +11,11 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { routing, appRoutingProviders} from './app/app.routing';
 import { FormsModule }   from '@angular/forms';
 
+import { ArrivalComponent } from './app/arrival';
+import { EncountersComponent } from './app/encounters';
+import { HomeComponent } from './app/home';
+import { ReportComponent } from './app/report';
+
 
 @NgModule({
   imports: [
@@ -18,19 +23,20 @@ import { FormsModule }   from '@angular/forms';
     FormsModule,
     routing
   ],
+
   providers: [
     HTTP_PROVIDERS,
     appRoutingProviders,
   ],
+
   declarations: [
     AppComponent,
-    // ArrivalComponent,
-    // HomeComponent,
-    // EncountersComponent,
-    // ReportComponent
-
-
+    ArrivalComponent,
+    HomeComponent,
+    EncountersComponent,
+    ReportComponent
   ],
+  
   exports: [AppComponent],
   bootstrap: [AppComponent],
 })
