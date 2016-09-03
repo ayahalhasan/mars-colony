@@ -39,9 +39,9 @@ export class ReportComponent {
        });
      }
 
-     get noEncounters(){
-      return this.encounter.atype === this.NO_ALIEN_SELECTED;
-    }
+      get noEncounters(){
+       return this.encounter.atype === this.NO_ALIEN_SELECTED;
+     }
 
 
 

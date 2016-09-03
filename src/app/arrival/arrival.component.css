@@ -1,4 +1,10 @@
+
+
+
+
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,700";
+
+
 
 .register-page {
   background-color: #000;
@@ -24,13 +30,22 @@
   margin-bottom: 1.5rem;
 }
 
+.title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
 /* This is for occupation selecter */
 
 select, option {
   width: 100%;
   font-size: 1rem;
   color: #ed4343;
-  /*width: 100%;*/
   margin: 0;
   background: #000;
   border: 1px solid transparent;
@@ -78,7 +93,6 @@ input {
   width: 100%;
   margin-bottom: 1.5rem;
   border: none;
-  /*border-bottom: 1px solid #fff;*/
   box-shadow: none;
   height: 2rem;
   font-size: 1rem;
@@ -90,8 +104,6 @@ input {
   font-size: 1rem;
   border-bottom: 1px solid #fff;
   color: #ed4343;
-  /*letter-spacing: 2px;
-  margin-top: 15px;*/
 }
 
 select {
@@ -101,6 +113,4 @@ select {
   font-size: 1rem;
   border-bottom: 1px solid #fff;
   color: #ed4343;
-  /*letter-spacing: 2px;
-  margin-top: 15px;*/
 }

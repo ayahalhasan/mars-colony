@@ -72,9 +72,11 @@ textarea {
   outline: none;
   line-height: 1rem;
   height: 200px;
-  &::-webkit-input-placeholder {
-    color: #ed4343;
-  }
+
+}
+
+textarea &::-webkit-input-placeholder {
+  color: #ed4343;
 }
 
 button {

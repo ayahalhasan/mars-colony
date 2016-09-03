@@ -21,7 +21,7 @@ span {
 /* This is for the header page */
 .encounters {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0;
   color: #000;
 }
 
@@ -38,6 +38,7 @@ span {
 	overflow: scroll;
 	text-align: left;
 	height: 400px;
+  margin: 2rem;
 }
 
 .button {
