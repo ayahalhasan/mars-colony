@@ -1,6 +1,6 @@
 # Mars Colony App
 
-![screen shot 2016-08-30 at 9 03 32 pm](https://cloud.githubusercontent.com/assets/20249491/18222020/34e32ba6-713f-11e6-9fbb-6af1cb569dd4.png)
+![screen shot](https://cloud.githubusercontent.com/assets/20249491/19064857/d912bd98-89c4-11e6-8345-306e48b4a703.png)
 
 # Summary 
 Mars Colony is a single page application that  allowed the user to login, read and post new alien on Mars Planet.
