@@ -4,48 +4,75 @@
   box-sizing: border-box;
 }
 
-.container {
-  position: relative;
-  min-height: 100vh;
-  background-color: #000;
-  background-position: bottom;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
 
 article {
   width: 80%;
   position: relative;
+  margin-left: 117px;
 }
 
+
 span {
-  color: #fff;
-  position: absolute;
+  color: #3d6b8c;
+  position: relative;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  font-size: 1rem;
+  font-size: 20px;
 }
 
 .title {
   width: 100%;
   text-align: center;
+  color: #3d6b8c;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+
+  /*font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
+  padding: 2rem 1rem;*/
+}
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #fff;
+  margin: 0;
+  padding-top: 50px;
 }
 
-h1 {
-  font-weight: 100;
-  font-size: 2rem;
+p {
   color: #fff;
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 3px;
+  top: 16px;
+  right: 0;
+}
+
+.fa {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(66, 42, 42, 0.7)), url(http://downloadwallpaperhd.com/wp-content/uploads/2014/06/Astronaut-in-Space-HD-Wallpaper.jpg);
+  background-size: cover;
 }
 
 form {
   width: 100%;
   height: auto;
   position: relative;
-  color: #ed4343;
+  color: #3d6b8c;
 }
 
 select {
@@ -53,12 +80,16 @@ select {
   border: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
   padding: 10px;
   border-bottom: 1px solid #fff;
-  color: #ed4343;
+  color: #3d6b8c;
   background: 0 0;
   margin-top: 15px;
   outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 textarea {
@@ -67,23 +98,24 @@ textarea {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   padding: 10px;
-  color: #ed4343;
-  margin-top: 15px;
+  margin-top: 25px;
   outline: none;
   line-height: 1rem;
-  height: 200px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-radius: 10px;
 
 }
-
 textarea &::-webkit-input-placeholder {
-  color: #ed4343;
+  color: #3d6b8c;
 }
 
 button {
-  position: absolute;
-  color: #fff;
-  background-color: #000;
+  position: relative;
+  color: #3d6b8c;
   font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 10px;
   width: 50%;
   margin-top: 20px;
@@ -92,4 +124,13 @@ button {
   font-size: 2rem;
   font-weight: 100;
   cursor: pointer;
+}
+select:hover{
+  color: #fff;
+}
+p:hover,
+textarea:hover,
+button:hover{
+  background-color: #3d6b8c;
+  color: #fff;
 }

@@ -1,0 +1,19 @@
+<section class="container">
+
+  <header class="title">
+  	<h2> 4th Rock from the Sun </h2>
+  </header>
+
+    <article>
+    	<ul>
+    		<li *ngFor="let o of posts"><a href="{{o.link}}" target="_blank"> <h2 class="heading">{{o.title.rendered}}</h2></a>
+    		<p [innerHTML]="o.excerpt.rendered"></p>
+    		</li>
+    	</ul>
+    </article>
+
+  	<footer>
+    	<button [routerLink]="['/encounters']"> Back to Encounter</button>
+    </footer>
+
+</section>

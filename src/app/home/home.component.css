@@ -31,15 +31,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(100, 0, 0, 0.7)), url(http://www.space.com/images/i/000/054/822/original/Mars_Hemisphere_NASA_image.jpg?interpolation=lanczos-none&downsize=*:1000);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(66, 42, 42, 0.7)), url(https://wallpaperscraft.com/image/space_cataclysm_planet_art_explosion_asteroids_comets_fragments_98315_1920x1080.jpg);
   background-size: cover;
 }
 
 .title {
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  color: #3d6b8c;
+  text-shadow: 0 1px 0 #fff;
   text-transform: uppercase;
   flex-basis: 20%;
 }
@@ -67,7 +68,7 @@ h2 {
 }
 
 .enter {
-  color: #fff;
-  font-weight: 100;
+  color: #3d6b8c;
+  font-weight: 800;
   font-family: 'Roboto', sans-serif;
 }

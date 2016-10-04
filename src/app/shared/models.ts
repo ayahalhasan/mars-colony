@@ -42,3 +42,8 @@ export class Colonist {
 // 	age: number;
 // 	job: IOccupation;
 // }
+
+export interface IPosts{
+	title: Object;
+	content: Object;
+}

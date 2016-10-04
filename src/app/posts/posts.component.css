@@ -1,0 +1,70 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,700";
+
+.title {
+  color: #3d6b8c;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(66, 42, 42, 0.7)), url(http://downloadwallpaperhd.com/wp-content/uploads/2014/06/Astronaut-in-Space-HD-Wallpaper.jpg);
+  background-size: cover;
+  padding: 0;
+}
+
+.heading{
+	color: #6CC417;
+	font-family: 'Roboto', sans-serif;
+}
+
+.heading:hover{
+	/*background:linear-gradient(rgba(108,196,23,.5),rgba(0,0,0,.5));*/
+	color:#fff;
+	cursor: pointer;
+	}
+
+a{
+	text-decoration:none;
+}
+
+p{
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	line-height: 40px;
+}
+
+article{
+	width: 80%;
+}
+
+button{
+  background-color: rgba(0, 0, 0, 0.3);
+	color: #3d6b8c;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2rem;
+	padding: 10px ;
+	width: 50%;
+	border: none;
+	cursor: pointer;
+	margin-left: 330px;
+}
+button:hover {
+  background-color: #3d6b8c;
+  color: #fff;
+}
+
+footer{
+	margin-bottom: 50px;
+}

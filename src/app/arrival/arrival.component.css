@@ -27,13 +27,26 @@
 }
 
 .title {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 100;
+  color: #3d6b8c;
+  font-size: 60px;
+  font-weight: 800;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
   margin: 0;
+  margin-right: 30rem;
   padding: 2rem 1rem;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(66, 42, 42, 0.7)), url(http://downloadwallpaperhd.com/wp-content/uploads/2014/06/Astronaut-in-Space-HD-Wallpaper.jpg);
+  background-size: cover;
 }
 
 /* This is for occupation selecter */
@@ -41,9 +54,9 @@
 select, option {
   width: 100%;
   font-size: 1rem;
-  color: #ed4343;
+  color: #3d6b8c;
   margin: 0;
-  background: #000;
+  background: 0 0;
   border: 1px solid transparent;
   outline: none;
   box-sizing: border-box;
@@ -51,7 +64,7 @@ select, option {
 }
 
 input::-webkit-input-placeholder {
-  color: #ed4343;
+  color: #3d6b8c;
 }
 
 /* This is for the button */
@@ -59,17 +72,22 @@ input::-webkit-input-placeholder {
 button {
   flex: 1;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
   width: 100%;
-  color: #fff;
-  background-color: #fff;
-  background: #000;
+  color: #3d6b8c;
+  background-color: 0 0;
+  background: 0 0;
   font-family: 'Roboto', sans-serif;
   padding: 1rem 2rem;
   border: none;
   cursor: pointer;
 
+}
+
+button:hover {
+  color: #fff;
 }
 
 
@@ -92,21 +110,43 @@ input {
   box-shadow: none;
   height: 2rem;
   font-size: 1rem;
+  font-weight: bold;
   padding-left: 0.5rem;
   background: 0 0;
   width: 100%;
   border: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
   border-bottom: 1px solid #fff;
-  color: #ed4343;
+  color: #3d6b8c;
+  text-transform: uppercase;
 }
 
+select:hover,
+input:hover {
+  color: #fff;
+}
 select {
   width: 100%;
   border: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   border-bottom: 1px solid #fff;
-  color: #ed4343;
+  color: #3d6b8c;
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-transform: uppercase;
+
+}
+
+form {
+  width: 60%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+  padding-bottom: 80px;
+  margin: 0;
+  align-items: center;
+
 }
